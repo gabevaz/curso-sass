@@ -1,0 +1,44 @@
+.header {
+    &__logo {
+        text-align: center;   
+    }
+    &__img {
+            max-width: 350px;
+    } 
+    .menu {
+        &__list {
+            @include reset-list;
+            @include flx(justify-content, center);
+            border-top: 1px solid $light-grey;
+            border-bottom: 1px solid $light-grey;
+            width: 80%;
+            margin-right: auto;
+            margin-left:auto;
+            padding: 20px 0;
+        }
+        &__links {
+            position: relative;
+
+            &:not(:last-child):after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -3px;
+                margin: auto;
+                height: 15px;
+                width: 1px;
+                background-color: $light-grey;
+            }
+        }
+        &__link {
+            @extend %no-decoration;
+
+            padding: 0 25px;
+            color: $dark-grey;
+            &:hover {
+                color: $purple;
+            }
+        }
+    }
+}

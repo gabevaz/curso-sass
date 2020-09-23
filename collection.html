@@ -2,99 +2,97 @@
 <html>
     <head>
         <title>Gatito PetShop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
     </head>
 <body>
 
-    <div class="header">
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo" />
-        </div>
-        <div class="main-menu">
-            <ul class="link-list">
-                <li><a href="index.html" class="link">Página inicial</a></li>
-                <li><a href="about.html" class="link">Sobre nós</a></li>
-                <li><a href="collection.html" class="link">Cães</a></li>
-                <li><a href="collection.html" class="link">Gatos</a></li>
-                <li><a href="collection.html" class="link">Pássaros</a></li>
+    <header class="header">
+        <figure class="header__logo">
+            <img src="assets/img/logo.png" alt="Logo" class="header__img" />
+        </figure>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__links"><a href="index.html" class="menu__link">Página inicial</a></li>
+                <li class="menu__links"><a href="about.html" class="menu__link">Sobre nós</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Cães</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Gatos</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Pássaros</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
     <div class="collection">
-        <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span> > </span>
-            <a href="collection.html">Posts</a>
+        <div class="collection__breadcrumb breadcrumb">
+            <a href="index.html" class="breadcrumb__link">Home</a>
+            <img src="assets/img/arrow.svg" alt="Seta" class="breadcrumb__img" />
+            <a href="collection.html" class="breadcrumb__link">Posts</a>
         </div>
-        <div class="post">
-            <div class="post-img">
-                <img src="assets/img/dog.jpg" alt="Cachorro" />
-            </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title">Cuidados com os animais durante a quarentena</a>
-                <p class="post-date">20/08/2020</p>
-                <span class="post-tag">Cães</span>
-            </div>
-        </div>
-        <div class="post half">
-            <div class="post-img">
-                <img src="assets/img/party.jpg" alt="Cachorro festa" />
-            </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title half">Como manter a saúde do seu pet</a>
-                <p class="post-date">09/08/2020</p>
-                <span class="post-tag">Cães</span>
+        <div class="collection__post">
+            <figure class="collection__figure">
+                <img src="assets/img/dog.jpg" alt="Cachorro" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title">Cuidados com os animais durante a quarentena</a>
+                <p class="collection__date">20/08/2020</p>
+                <span class="collection__tag">Cães</span>
             </div>
         </div>
-        <div class="post half">
-            <div class="post-img">
-                <img src="assets/img/car.jpg" alt="Cachorro carro" />
-            </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title half">Como transportar seu pet com segurança</a>
-                <p class="post-date">23/07/2020</p>
-                <span class="post-tag">Cães</span>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post-img">
-                <img src="assets/img/sun.jpg" alt="Cachorro oculos" />
-            </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title">Cuidados com os animais no verão</a>
-                <p class="post-date">12/07/2020</p>
-                <span class="post-tag">Cães</span>
+        <div class="collection__post half">
+            <figure class="collection__figure">
+                <img src="assets/img/party.jpg" alt="Cachorro festa" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title half">Como manter a saúde do seu pet</a>
+                <p class="collection__date">09/08/2020</p>
+                <span class="collection__tag">Cães</span>
             </div>
         </div>
-        <div class="post half">
-            <div class="post-img">
-                <img src="assets/img/kid.jpg" alt="Cachorro e criança" />
-            </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title half">5 raças de cachorro para quem tem crianças</a>
-                <p class="post-date">02/07/2020</p>
-                <span class="post-tag">Cães</span>
+        <div class="collection__post half">
+            <figure class="collection__figure">
+                <img src="assets/img/car.jpg" alt="Cachorro carro" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title half">Como transportar seu pet com segurança</a>
+                <p class="collection__date">23/07/2020</p>
+                <span class="collection__tag">Cães</span>
             </div>
         </div>
-        <div class="post half">
-            <div class="post-img">
-                <img src="assets/img/adopt.jpg" alt="Cachorro e criança" />
+        <div class="collection__post">
+            <figure class="collection__figure">
+                <img src="assets/img/sun.jpg" alt="Cachorro oculos" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title">Cuidados com os animais no verão</a>
+                <p class="collection__date">12/07/2020</p>
+                <span class="collection__tag">Cães</span>
             </div>
-            <div class="post-about">
-                <a href="article.html" class="post-title half">Lugares para adotar cachorros em São Paulo</a>
-                <p class="post-date">16/06/2020</p>
-                <span class="post-tag">Cães</span>
+        </div>
+        <div class="collection__post half">
+            <figure class="collection__figure">
+                <img src="assets/img/kid.jpg" alt="Cachorro e criança" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title half">5 raças de cachorro para quem tem crianças</a>
+                <p class="collection__date">02/07/2020</p>
+                <span class="collection__tag">Cães</span>
+            </div>
+        </div>
+        <div class="collection__post half">
+            <figure class="collection__figure">
+                <img src="assets/img/adopt.jpg" alt="Cachorro adotado" class="collection__img" />
+            </figure>
+            <div class="collection__about">
+                <a href="article.html" class="collection__title half">Lugares para adotar cachorros em São Paulo</a>
+                <p class="collection__date">16/06/2020</p>
+                <span class="collection__tag">Cães</span>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-logo">
-            <img src="assets/img/footer-logo.png" alt="Footer logo" />
-        </div>
-        <div class="footer-txt">
-            <p>© 2020 Gatito Blog . All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <img src="assets/img/footer-logo.png" alt="Footer logo" class="footer__logo" />
+        <p class="footer__txt">© 2020 Gatito Blog . All rights reserved.</p>
     </footer>
 
 </body>

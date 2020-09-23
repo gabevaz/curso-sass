@@ -1,0 +1,15 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px 0;
+
+    &__logo {
+        max-width: 100px;
+    }
+
+    &__footer-txt {
+        margin: auto;
+        font-size: 14px;
+    }
+}

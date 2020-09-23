@@ -2,85 +2,83 @@
 <html>
     <head>
         <title>Gatito PetShop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
     </head>
 <body>
 
-    <div class="header">
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="Logo" />
-        </div>
-        <div class="main-menu">
-            <ul class="link-list">
-                <li><a href="index.html" class="link">Página inicial</a></li>
-                <li><a href="about.html" class="link">Sobre nós</a></li>
-                <li><a href="collection.html" class="link">Cães</a></li>
-                <li><a href="collection.html" class="link">Gatos</a></li>
-                <li><a href="collection.html" class="link">Pássaros</a></li>
+    <header class="header">
+        <figure class="header__logo">
+            <img src="assets/img/logo.png" alt="Logo" class="header__img" />
+        </figure>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__links"><a href="index.html" class="menu__link">Página inicial</a></li>
+                <li class="menu__links"><a href="about.html" class="menu__link">Sobre nós</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Cães</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Gatos</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Pássaros</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="main">
-        <div class="content">
-            <div class="post">
-                <a href="article.html" class="post-title">Cuidados com os animais durante a quarentena</a>
-                <div class="post-subtitle">
-                    <p class="post-date">20/08/2020</p>
-                    <span class="post-tag">Cães</span>
+    <main class="main">
+        <div class="main__content">
+            <article class="main__post">
+                <a href="article.html" class="main__title">Cuidados com os animais durante a quarentena</a>
+                <div class="main__subtitle">
+                    <p class="main__date">20/08/2020</p>
+                    <span class="main__tag">Cães</span>
                 </div>
-                <div class="post-details">
-                    <img src="assets/img/dog.jpg" alt="Cachorro" />
-                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis et erat vestibulum vestibulum tempor eget lectus. Pellentesque egestas non erat ac posuere. Integer mattis nec augue eget feugiat. Nam id lacinia est. In faucibus elit at libero faucibus, ut mollis augue congue. Cras venenatis, erat ac faucibus pretium, ante risus feugiat diam, quis tempus tellus ipsum sit amet massa. Donec ac commodo tortor. Phasellus sed fringilla tortor. Etiam iaculis dui sit amet finibus sodales. Morbi a mauris interdum diam efficitur porta at at augue. Suspendisse diam lacus, consectetur quis erat at, pretium vehicula nisl. Aliquam vulputate, arcu id malesuada tempor, felis elit sodales lorem, at ultrices leo nunc eu neque. Ut ut laoreet mauris.</p>
-                    <a href="article.html" class="post-btn">Ler mais</a>
-                    <div class="post-bottom-info">
-                        <div class="post-author">
-                            <p>by Alura</p>
+                <div class="main__details">
+                    <img src="assets/img/dog.jpg" alt="Cachorro" class="main__img" />
+                    <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae turpis et erat vestibulum vestibulum tempor eget lectus. Pellentesque egestas non erat ac posuere. Integer mattis nec augue eget feugiat. Nam id lacinia est. In faucibus elit at libero faucibus, ut mollis augue congue. Cras venenatis, erat ac faucibus pretium, ante risus feugiat diam, quis tempus tellus ipsum sit amet massa. Donec ac commodo tortor. Phasellus sed fringilla tortor. Etiam iaculis dui sit amet finibus sodales. Morbi a mauris interdum diam efficitur porta at at augue. Suspendisse diam lacus, consectetur quis erat at, pretium vehicula nisl. Aliquam vulputate, arcu id malesuada tempor, felis elit sodales lorem, at ultrices leo nunc eu neque. Ut ut laoreet mauris.</p>
+                    <a href="article.html" class="main__btn">Ler mais</a>
+                    <div class="main__info">
+                        <div class="main__author">
+                            <p class="main__p">by Alura</p>
                         </div>
-                        <div class="post-comments">
-                            <a href="article.html">2 comentários</a>
+                        <div class="main__comments">
+                            <a href="article.html" class="main__a">2 comentários</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-        <div class="sidebar">
-            <div class="top-sidebar">
-                <p class="top-sidebar-title">Top posts</p>
-                <ul class="top-sidebar-posts">
-                    <li>
-                        <img src="assets/img/cat.jpg"/>
-                        <div class="top-sidebar-post-details">
-                            <a href="article.html" class="top-sidebar-post-title">Adotar um gato: tudo o que você precisa saber</a>
-                            <p class="top-sidebar-post-date">15/08/2020</p>
+        <div class="main__sidebar sidebar">
+            <aside class="sidebar__top">
+                <p class="sidebar__title">Top posts</p>
+                <ul class="sidebar__posts">
+                    <li class="sidebar__list">
+                        <img src="assets/img/cat.jpg" class="sidebar__img"/>
+                        <div class="sidebar__details">
+                            <a href="article.html" class="sidebar__post-title">Adotar um gato: tudo o que você precisa saber</a>
+                            <p class="sidebar__post-date">15/08/2020</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="assets/img/pc.jpg"/>
-                        <div class="top-sidebar-post-details">
-                            <a href="article.html" class="top-sidebar-post-title">Cuidados com seu pet durante a pandemia</a>
-                            <p class="top-sidebar-post-date">23/07/2020</p>
+                    <li class="sidebar__list">
+                        <img src="assets/img/pc.jpg" class="sidebar__img"/>
+                        <div class="sidebar__details">
+                            <a href="article.html" class="sidebar__post-title">Cuidados com seu pet durante a pandemia</a>
+                            <p class="sidebar__post-date">23/07/2020</p>
                         </div>
                     </li>
-                    <li>
-                        <img src="assets/img/sun.jpg"/>
-                            <div class="top-sidebar-post-details">
-                                <a href="article.html" class="top-sidebar-post-title">Lojas com acessórios para pets</a>
-                                <p class="top-sidebar-post-date">05/07/2020</p>
-                            </div>
+                    <li class="sidebar__list">
+                        <img src="assets/img/sun.jpg" class="sidebar__img"/>
+                        <div class="sidebar__details">
+                            <a href="article.html" class="sidebar__post-title">Lojas com acessórios para pets</a>
+                            <p class="sidebar__post-date">05/07/2020</p>
+                        </div>
                     </li>
                 </ul>
-            </div>
+            </aside>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <div class="footer-logo">
-            <img src="assets/img/footer-logo.png" alt="Footer logo" />
-        </div>
-        <div class="footer-txt">
-            <p>© 2020 Gatito Blog . All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <img src="assets/img/footer-logo.png" alt="Footer logo" class="footer__logo" />
+        <p class="footer__txt">© 2020 Gatito Blog . All rights reserved.</p>
     </footer>
 
 </body>
