@@ -11,13 +11,29 @@
             @include flx(justify-content, center);
             border-top: 1px solid $light-grey;
             border-bottom: 1px solid $light-grey;
-            width: 80%;
             margin-right: auto;
             margin-left:auto;
-            padding: 20px 0;
+            @include for-phone-only {    
+                width: 90%;
+                padding: 15px 0;
+                flex-wrap: wrap;
+            }
+
+            @include for-tablet-only {    
+                width: 80%;
+                padding: 20px 0;
+            }
+
+            @include for-desktop-up {    
+                width: 80%;
+                padding: 20px 0;
+            }
         }
         &__links {
             position: relative;
+            @include for-phone-only {    
+                padding: 5px 0;
+            }
 
             &:not(:last-child):after {
                 content: "";

@@ -8,8 +8,8 @@
         max-width: 100px;
     }
 
-    &__footer-txt {
+    &__txt {
         margin: auto;
-        font-size: 14px;
+        @include fontSize(14px);
     }
 }

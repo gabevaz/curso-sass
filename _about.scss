@@ -1,4 +1,7 @@
 .about {
+    @include for-phone-only {    
+        width: 90%;
+    }
     width: 80%;
     margin: 0 auto 40px;
 
@@ -9,7 +12,7 @@
     }
 
     &__h1 {
-        font-size: 22px;
+        @include fontSize(22px);
         color: $dark-grey;
         letter-spacing: 1px;
         @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
@@ -20,7 +23,7 @@
         justify-content: center;
         align-items: center;
         &__link {
-            font-size: 12px;
+            @include fontSize(12px);
             text-decoration: unset;
             color: $dark-grey;
 
@@ -51,7 +54,13 @@
         width: 70%;
         margin: 30px auto;
         text-align: center;
-        font-size: 16px;
+        @include fontSize(16px);
+        @include for-phone-only {    
+            width: 90%;
+        }
+        @include for-tablet-only {    
+            width: 80%;
+        }
     }
 
     &__split {
@@ -63,15 +72,22 @@
 
     &__img2 {
         width: 40%;
+        @include for-phone-only {    
+            width: 80%;
+        }
     }
 
     &__txt {
         width: 55%;
+        @include for-phone-only {    
+            width: 90%;
+            text-align: center;
+        }
     }
 
     &__p {
         padding: 10px 20px;
-        font-size: 14px;
+        @include fontSize(14px);
     }
     
 }
