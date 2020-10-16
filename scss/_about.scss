@@ -1,9 +1,10 @@
-.article {
+.about {
     @include for-phone-only {    
         width: 90%;
     }
     width: 80%;
     margin: 0 auto 40px;
+    font-family: Arial;
 
     &__title {
         background-color: $light-grey;
@@ -44,30 +45,50 @@
         width: 100%;
     }
 
-    &__details {
+    &__img {
+        width: 100%;
+    }
+
+    &__intro {
+        font-weight: 100;
+        color: $dark-grey;
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+        @include fontSize(16px);
+        @include for-phone-only {    
+            width: 90%;
+        }
+        @include for-tablet-only {    
+            width: 80%;
+        }
+    }
+
+    &__split {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    &__date {
-        @extend %no-margin-top, %no-margin-bottom, %default-margin-left, %default-margin-right;
-        @include fontSize(12px);
-        font-style: italic;
+    &__img2 {
+        width: 40%;
+        @include for-phone-only {    
+            width: 80%;
+        }
     }
 
-    &__tag {
-        @include fontSize(14px);
-        padding: 5px 7px;
-        color: $purple;
-        border: 1px solid $purple;
-        @extend %no-margin-top, %no-margin-bottom, %default-margin-left, %default-margin-right;
+    &__txt {
+        width: 55%;
+        @include for-phone-only {    
+            width: 90%;
+            text-align: center;
+        }
     }
 
-    &__content {
-        font-weight: 100;
-        @include fontSize(14px);
-        color: $dark-grey;
+    &__p {
         padding: 10px 20px;
+        @include fontSize(14px);
     }
+    
 }
