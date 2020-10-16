@@ -1,0 +1,16 @@
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial;
+
+    &__logo {
+        max-width: 100px;
+    }
+
+    &__txt {
+        margin: auto;
+        @include fontSize(14px);
+    }
+}
